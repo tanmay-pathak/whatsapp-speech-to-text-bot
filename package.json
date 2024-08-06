@@ -1,0 +1,24 @@
+{
+	"name": "whatsapp-speech-to-text-bot",
+	"version": "1.0.0",
+	"description": "",
+	"main": "main.js",
+	"scripts": {
+		"start": "tsc && node --env-file=config.env dist/main.js",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"lint": "npx @biomejs/biome format --write ."
+	},
+	"author": "Tanmay Pathak",
+	"license": "MIT",
+	"dependencies": {
+		"@types/qrcode-terminal": "^0.12.2",
+		"openai": "^4.55.0",
+		"qrcode-terminal": "^0.12.0",
+		"whatsapp-web.js": "^1.25.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.8.3",
+		"@types/node": "^22.1.0",
+		"typescript": "^5.5.4"
+	}
+}
