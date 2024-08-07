@@ -27,6 +27,7 @@ client.on("message_create", async (message: any) => {
 		const audio = await message.downloadMedia();
 		const transcription = await speechToText(audio.data);
 		await message.reply(`Auto transcribed 🎤:\n\n${transcription}`);
+		chat.markUnread();
 	}
 });
 
